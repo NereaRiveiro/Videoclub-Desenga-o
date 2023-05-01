@@ -13,7 +13,7 @@ limit 1;
 
 ;
 
--- 2. Qué clientes han alquilado más veces.alter. -- 
+-- 2. Qué clientes han alquilado más veces. -- 
 
 SELECT client.name, client.lastname, COUNT(rental.rental_id) as total_rents
 FROM rental
@@ -39,7 +39,7 @@ WHERE MONTH(birthday) = 12
 ORDER BY MONTH(birthday), DAY(birthday);
 
 
--- 5. Las peliculas de duración más corta con mejor rating. --
+-- 5. Las peliculas de duración más corta con mejor valoración. --
 
 select film.title, film.length, max(rental.rating) as best_rating
 from rental
@@ -77,4 +77,21 @@ ORDER BY max(rental_duration)
 LIMIT 5;
 
 
--- 9. 
+-- 9. Tabla de los clientes que tienen que devolver películas este mes. -- 
+
+SELECT client.name, client.lastname, client.phone_number, client.mail, rental.return_date
+FROM client
+INNER JOIN rental
+ON client.client_id = rental.client_id
+WHERE month(return_date) = 05;
+
+-- 10. Qué special features tiene la peli que va a alquilar el cliente. --
+
+SELECT film.title, film.special_features
+FROM film
+INNER JOIN inventory
+ON film.film_id = inventory.film_id
+INNER JOIN rental
+ON inventory.inventory_id = rental.inventory_id
+WHERE rental_id = 1
+

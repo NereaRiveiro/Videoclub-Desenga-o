@@ -1,6 +1,6 @@
 # Videoclub Desengaño
 
-## Construcción de una DataBAse con MySQL
+## Construcción de una DataBase con MySQL
 
 ![oki](./images/descarga.jpeg)
 

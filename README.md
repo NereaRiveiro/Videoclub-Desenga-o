@@ -64,7 +64,7 @@ Por ende, consideramos que tenemos que hacer los siguientes **cambios**:
 - Creamos las relaciones de nuestra database de la siguiente manera:
 
 ![sql](./notebooks/SQL/foto_diagrama.png)
-
+</details>
 
 ## 💿 Consultas habituales:<a name="consultas"/>
 

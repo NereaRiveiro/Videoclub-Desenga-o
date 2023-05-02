@@ -2,7 +2,7 @@
 
 ## Construcción de una DataBAse con MySQL
 
-<img src = "https://github.com/NereaRiveiro/Videoclub-Desenganho/images/descarga.jpeg" width="550" height="400"/>
+![oki](./images/descarga.jpeg)
 
 ## Índice:
 
@@ -63,8 +63,8 @@ Por ende, consideramos que tenemos que hacer los siguientes **cambios**:
 - Prescindimos de los datos previos de 'rental' ya que están incompletos. Se le sugiere al cliente que nos dé la base de datos completa, mientras usaremos una nueva tabla para ir rellenando los nuevos alquileres postreapertura.
 - Creamos las relaciones de nuestra database de la siguiente manera:
 
-<img src="https://github.com/NereaRiveiro/Videoclub-Desenganho/notebooks/SQL/foto_diagrama.png" width="550" height="400" />
-</details>
+![sql](./notebooks/SQL/foto_diagrama.png)
+
 
 ## 💿 Consultas habituales:<a name="consultas"/>
 
